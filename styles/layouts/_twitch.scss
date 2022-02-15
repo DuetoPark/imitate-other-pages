@@ -1,0 +1,34 @@
+.twitch {
+  $translate-value: 6px;
+
+  width: 100%;
+  padding: 24px;
+
+  .title {
+    margin-bottom: 24px;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .image-group {
+    @include flexbox(between);
+  }
+
+  .twitch-card-image {
+    &:first-child {
+      @include translate-image($translate-value);
+    }
+
+    &:nth-child(2) {
+      @include translate-image($translate-value, green);
+    }
+
+    &:last-child {
+      @include translate-image($translate-value, powderblue);
+    }
+
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+  }
+}
