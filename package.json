@@ -1,0 +1,16 @@
+{
+  "name": "interaction-projects",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -wr --source-map true ./styles/main.scss ./style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^7.0.1",
+    "sass-lint": "^1.13.1"
+  }
+}
