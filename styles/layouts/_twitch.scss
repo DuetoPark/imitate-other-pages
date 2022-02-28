@@ -12,6 +12,7 @@
 
   .image-group {
     @include flexbox(between);
+    flex-wrap: wrap;
   }
 
   .twitch-card-image {
@@ -28,7 +29,20 @@
     }
 
     &:not(:last-child) {
-      margin-right: 24px;
+      margin-bottom: 24px;
+    }
+  }
+
+  @include responsive('T') {
+    .image-group {
+      flex-wrap: nowrap;
+    }
+
+    .twitch-card-image {
+      &:not(:last-child) {
+        margin-right: 24px;
+        margin-bottom: 0;
+      }
     }
   }
 }
