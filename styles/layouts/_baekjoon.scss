@@ -1,0 +1,6 @@
+.baekjoon {
+  .tooltip-list {
+    @include flexbox(start);
+    padding: 36px 0;
+  }
+}

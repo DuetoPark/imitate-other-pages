@@ -1,0 +1,70 @@
+.tooltip-wrapper {
+  $ratio-1: 30%;
+
+  position: relative;
+
+  .icon-link {
+    display: block;
+    width: 36px;
+    height: 36px;
+    padding: 8px;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      transition: opacity 300ms ease-in-out;
+    }
+
+    &:hover img {
+      opacity: 0.7;
+    }
+
+    &:hover + .tooltip {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(calc(-100% - 10px));
+
+      &::before {
+        transform: translate(-50%, 0) scale(4);
+      }
+    }
+  }
+
+  .tooltip {
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    padding: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-radius: 4px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-100%);
+    transition: all 300ms ease-in-out;
+
+    &::before {
+      @include pos-center-x;
+      bottom: 0;
+      display: block;
+      width: $ratio-1;
+      height: 0;
+      min-width: 40px;
+      padding-top: $ratio-1;
+      background-color: rgba($black, 0.8);
+      border-radius: 50%;
+      content: '';
+      transform: translate(-50%, 100%);
+      transition: transform 300ms ease-in-out;
+    }
+
+    strong {
+      position: relative;
+      z-index: 100;
+      font-weight: 400;
+      color: $white;
+    }
+  }
+}
