@@ -1,0 +1,33 @@
+.page-section {
+  $font-size-24: 1.5rem;
+  $font-size-18: 1.125rem;
+  $font-size-14: 0.875rem;
+
+  width: 100%;
+  padding: 24px;
+
+  .title {
+    margin-bottom: 24px;
+    font-size: $font-size-18;
+    font-weight: 700;
+  }
+
+  .subtitle {
+    margin-bottom: 12px;
+    font-size: $font-size-14;
+    font-weight: 700;
+  }
+
+  @include responsive('T') {
+    padding-right: 0;
+    padding-left: 0;
+
+    .title {
+      font-size: $font-size-24;
+    }
+
+    .subtitle {
+      font-size: $font-size-18;
+    }
+  }
+}
