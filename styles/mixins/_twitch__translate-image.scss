@@ -1,4 +1,4 @@
-@mixin translate-image($translate-value, $background-color: orange) {
+@mixin translate-image($translate-value, $background-color: $orange) {
   position: relative;
   width: 100%;
   background-color: $background-color;

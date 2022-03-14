@@ -12,11 +12,11 @@
     }
 
     &:nth-child(2) {
-      @include translate-image($translate-value, green);
+      @include translate-image($translate-value, $green);
     }
 
     &:last-child {
-      @include translate-image($translate-value, powderblue);
+      @include translate-image($translate-value, $blue);
     }
 
     &:not(:last-child) {
