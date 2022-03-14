@@ -1,0 +1,9 @@
+.apple {
+  article:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  .apple-blur-header {
+    position: relative;
+  }
+}
