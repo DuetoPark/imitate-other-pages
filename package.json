@@ -12,5 +12,11 @@
   "dependencies": {
     "node-sass": "^7.0.1",
     "sass-lint": "^1.13.1"
+  },
+  "devDependencies": {
+    "stylelint": "^14.8.5",
+    "stylelint-config-recess-order": "^3.0.0",
+    "stylelint-config-standard": "^25.0.0",
+    "stylelint-scss": "^4.2.0"
   }
 }
